@@ -7,48 +7,57 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0a0a1a">
-<title>YJ 프로그램 모음</title>
+<title>🚀 프로그램 모음</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiWUog7ZSE66Gc6re4656oIOuqqOydjCIsInNob3J0X25hbWUiOiJZSiBBcHBzIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzBhMGExYSIsInRoZW1lX2NvbG9yIjoiIzBhMGExYSJ9">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0a1a;--card:#12122a;--card-hover:#1a1a3a;--border:#2a2a4a;--text:#e8e8f0;--text2:#8888aa;--accent:#6c5ce7;--gold:#f0c040;--green:#00d68f;--blue:#4da6ff;--red:#ff6b6b;--orange:#ff9f43;--pink:#fd79a8}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
-.header{text-align:center;padding:40px 20px 20px;position:relative}
-.header h1{font-size:28px;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px}
-.header p{color:var(--text2);font-size:13px}
+.header{text-align:center;padding:30px 20px 10px;position:relative}
+.header h1{font-size:26px;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:4px}
+.header p{color:var(--text2);font-size:12px}
 .badge{display:inline-block;background:var(--accent);color:#fff;padding:2px 10px;border-radius:20px;font-size:11px;font-weight:600;margin-left:8px;vertical-align:middle}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;padding:20px;max-width:1200px;margin:0 auto}
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;cursor:pointer;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;text-decoration:none;color:inherit;display:block}
-.card:hover{background:var(--card-hover);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.section-title{color:var(--text2);font-size:13px;font-weight:600;padding:16px 20px 8px;max-width:1400px;margin:0 auto;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--border);margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;padding:12px 20px;max-width:1400px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;cursor:pointer;transition:all .25s ease;position:relative;overflow:hidden;text-decoration:none;color:inherit;display:block}
+.card:hover{background:var(--card-hover);transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.4)}
 .card:active{transform:translateY(-1px)}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:16px 16px 0 0}
-.card:nth-child(1)::before{background:linear-gradient(90deg,#FFD700,#FFA500)}
-.card:nth-child(2)::before{background:linear-gradient(90deg,#6c5ce7,#a29bfe)}
-.card:nth-child(3)::before{background:linear-gradient(90deg,#00d68f,#4da6ff)}
-.card:nth-child(4)::before{background:linear-gradient(90deg,#fd79a8,#e84393)}
-.card:nth-child(5)::before{background:linear-gradient(90deg,#ff6b6b,#ff9f43)}
-.card-icon{font-size:48px;margin-bottom:12px;display:block;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3))}
-.card-title{font-size:18px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
-.card-ver{font-size:11px;color:var(--text2);background:rgba(255,255,255,.08);padding:2px 8px;border-radius:8px}
-.card-desc{font-size:13px;color:var(--text2);line-height:1.5;margin-bottom:12px}
-.card-tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:14px 14px 0 0}
+.c-gold::before{background:linear-gradient(90deg,#FFD700,#FFA500)}
+.c-purple::before{background:linear-gradient(90deg,#6c5ce7,#a29bfe)}
+.c-green::before{background:linear-gradient(90deg,#00d68f,#4da6ff)}
+.c-pink::before{background:linear-gradient(90deg,#fd79a8,#e84393)}
+.c-red::before{background:linear-gradient(90deg,#ff6b6b,#ff9f43)}
+.c-blue::before{background:linear-gradient(90deg,#4da6ff,#0984e3)}
+.c-cyan::before{background:linear-gradient(90deg,#00cec9,#81ecec)}
+.c-yellow::before{background:linear-gradient(90deg,#fdcb6e,#f39c12)}
+.c-lime::before{background:linear-gradient(90deg,#55efc4,#00b894)}
+.card-row{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.card-icon{font-size:36px;flex-shrink:0;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+.card-info{flex:1;min-width:0}
+.card-title{font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-ver{font-size:10px;color:var(--text2);background:rgba(255,255,255,.08);padding:1px 6px;border-radius:6px;margin-left:4px}
+.card-desc{font-size:11px;color:var(--text2);line-height:1.4;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-tags{display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:10px;padding:2px 8px;border-radius:12px;font-weight:500}
 .tag-api{background:rgba(108,92,231,.2);color:#a29bfe}
 .tag-ai{background:rgba(0,214,143,.2);color:#00d68f}
 .tag-drive{background:rgba(77,166,255,.2);color:#4da6ff}
 .tag-scan{background:rgba(255,159,67,.2);color:#ff9f43}
 .tag-tax{background:rgba(253,121,168,.2);color:#fd79a8}
 .tag-crm{background:rgba(240,192,64,.2);color:#f0c040}
-.status{position:absolute;top:16px;right:16px;width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
-.footer{text-align:center;padding:30px;color:var(--text2);font-size:12px}
+.tag-stock{background:rgba(255,107,107,.2);color:#ff6b6b}
+.tag-mcn{background:rgba(0,206,201,.2);color:#00cec9}
+.tag-biz{background:rgba(99,110,114,.2);color:#b2bec3}
+.status{position:absolute;top:12px;right:12px;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green)}
+.footer{text-align:center;padding:20px;color:var(--text2);font-size:11px}
 .footer a{color:var(--accent);text-decoration:none}
-.clock{font-size:13px;color:var(--text2);margin-top:8px;font-variant-numeric:tabular-nums}
+.clock{font-size:12px;color:var(--text2);margin-top:4px;font-variant-numeric:tabular-nums}
 @media(max-width:600px){
-  .grid{grid-template-columns:1fr;padding:12px}
-  .header h1{font-size:22px}
-  .card{padding:18px}
-  .card-icon{font-size:36px}
+  .grid{grid-template-columns:1fr;padding:8px 12px}
+  .header h1{font-size:20px}
+  .card{padding:14px}
+  .card-icon{font-size:28px}
 }
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
 .loading .status{animation:pulse 1.5s infinite}
@@ -56,71 +65,90 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </head>
 <body>
 <div class="header">
-  <h1>🚀 YJ 프로그램 모음 <span class="badge">5 Apps</span></h1>
+  <h1>🚀 프로그램 모음 <span class="badge">10 Apps</span></h1>
   <p>YJ Partners 비즈니스 툴 런처</p>
   <div class="clock" id="clock"></div>
 </div>
 
+<!-- 비즈니스 도구 -->
+<div class="section-title">📋 비즈니스 도구</div>
 <div class="grid">
-  <!-- 1. Nano Banana Editor v3 -->
-  <a class="card" href="https://jyjzzjtube-pixel.github.io/nano-banana-editor/" target="_blank" id="app1">
+  <a class="card c-green" href="https://jyjzzjtube-pixel.github.io/yjtax-v8/" target="_blank">
     <div class="status"></div>
-    <span class="card-icon">🍌</span>
-    <div class="card-title">Nano Banana Editor <span class="card-ver">v3</span></div>
-    <div class="card-desc">Gemini API 연동 마이크로급 이미지 편집기. AI 프롬프트 기반 이미지 생성 및 편집.</div>
-    <div class="card-tags">
-      <span class="tag tag-api">Gemini API</span>
-      <span class="tag tag-ai">AI 이미지</span>
-    </div>
+    <div class="card-row"><span class="card-icon">🧾</span><div class="card-info"><div class="card-title">YJ Tax Master<span class="card-ver">v9.2</span></div></div></div>
+    <div class="card-desc">마스터 업로드, 세무 캘린더, 대시보드. 법인사업자 세금 통합 관리.</div>
+    <div class="card-tags"><span class="tag tag-tax">세무관리</span><span class="tag tag-drive">캘린더</span></div>
   </a>
 
-  <!-- 2. 고객 대화 정리 시스템 v4 -->
-  <a class="card" href="https://jyjzzjtube-pixel.github.io/yj-db-automation/" target="_blank" id="app2">
+  <a class="card c-pink" href="https://jyjzzjtube-pixel.github.io/wonwill-app/" target="_blank">
     <div class="status"></div>
-    <span class="card-icon">💬</span>
-    <div class="card-title">고객 대화 정리 시스템 <span class="card-ver">v4</span></div>
-    <div class="card-desc">인물 필드 토글, URL 추출. 비정형 텍스트 자동 분류 및 고객 파이프라인 관리.</div>
-    <div class="card-tags">
-      <span class="tag tag-crm">CRM</span>
-      <span class="tag tag-ai">자동분류</span>
-    </div>
-  </a>
-
-  <!-- 3. YJ Tax Master v9.2 -->
-  <a class="card" href="https://jyjzzjtube-pixel.github.io/yjtax-v8/" target="_blank" id="app3">
-    <div class="status"></div>
-    <span class="card-icon">🧾</span>
-    <div class="card-title">YJ Tax Master <span class="card-ver">v9.2</span></div>
-    <div class="card-desc">마스터 업로드, 세무 캘린더, 대시보드. 법인사업자 세금 통합 관리 시스템.</div>
-    <div class="card-tags">
-      <span class="tag tag-tax">세무관리</span>
-      <span class="tag tag-drive">캘린더</span>
-    </div>
-  </a>
-
-  <!-- 4. Cha'R 제안서 시뮬레이터 v3.1 -->
-  <a class="card" href="https://jyjzzjtube-pixel.github.io/wonwill-app/" target="_blank" id="app4">
-    <div class="status"></div>
-    <span class="card-icon">📊</span>
-    <div class="card-title">Cha'R 제안서 시뮬레이터 <span class="card-ver">v3.1</span></div>
+    <div class="card-row"><span class="card-icon">📊</span><div class="card-info"><div class="card-title">제안서 시뮬레이터<span class="card-ver">v4.0+</span></div></div></div>
     <div class="card-desc">AI 분석, Google Drive 연동, 15개 카테고리. 프랜차이즈 제안서 자동 생성.</div>
-    <div class="card-tags">
-      <span class="tag tag-ai">AI 분석</span>
-      <span class="tag tag-drive">Drive 연동</span>
-    </div>
+    <div class="card-tags"><span class="tag tag-ai">AI 분석</span><span class="tag tag-drive">Drive 연동</span></div>
   </a>
 
-  <!-- 5. LSR VIP DATA HUB v6 (고객DB) -->
-  <a class="card" href="https://jyjzzjtube-pixel.github.io/lsr-vip-hub/" target="_blank" id="app5">
+  <a class="card c-cyan" href="https://jyjzzjtube-pixel.github.io/yj-partners-mcn/" target="_blank">
     <div class="status"></div>
-    <span class="card-icon">🗄️</span>
-    <div class="card-title">LSR VIP DATA HUB <span class="card-ver">v6</span></div>
-    <div class="card-desc">고객DB. 통합 스캔 업로드 (Excel/PDF/TXT), AI 자동분류, 음성녹음, 텔레그램 알림.</div>
-    <div class="card-tags">
-      <span class="tag tag-scan">통합스캔</span>
-      <span class="tag tag-ai">Claude+Gemini</span>
-      <span class="tag tag-crm">VIP CRM</span>
-    </div>
+    <div class="card-row"><span class="card-icon">📺</span><div class="card-info"><div class="card-title">YJ MCN 수익 대시보드</div></div></div>
+    <div class="card-desc">MCN 수익 분석, 채널 관리, 쇼츠 팩토리, NanoBanana AI 미디어 생성.</div>
+    <div class="card-tags"><span class="tag tag-mcn">MCN</span><span class="tag tag-ai">AI 미디어</span></div>
+  </a>
+
+  <a class="card c-blue" href="https://jyjzzjtube-pixel.github.io/founderone-site/" target="_blank">
+    <div class="status"></div>
+    <div class="card-row"><span class="card-icon">🏢</span><div class="card-info"><div class="card-title">파운더원 홈페이지</div></div></div>
+    <div class="card-desc">파운더원 기업 소개 및 사업 포트폴리오. 브릿지원 컨설팅.</div>
+    <div class="card-tags"><span class="tag tag-biz">기업소개</span></div>
+  </a>
+</div>
+
+<!-- 고객 & 데이터 관리 -->
+<div class="section-title">👥 고객 & 데이터 관리</div>
+<div class="grid">
+  <a class="card c-red" href="https://jyjzzjtube-pixel.github.io/lsr-vip-hub/" target="_blank">
+    <div class="status"></div>
+    <div class="card-row"><span class="card-icon">🗄️</span><div class="card-info"><div class="card-title">LSR VIP DATA HUB<span class="card-ver">v6</span></div></div></div>
+    <div class="card-desc">고객DB. 통합 스캔 업로드 (Excel/PDF/TXT), AI 자동분류, 음성녹음, 텔레그램.</div>
+    <div class="card-tags"><span class="tag tag-scan">통합스캔</span><span class="tag tag-ai">Claude+Gemini</span><span class="tag tag-crm">VIP CRM</span></div>
+  </a>
+
+  <a class="card c-purple" href="https://jyjzzjtube-pixel.github.io/yj-db-automation/" target="_blank">
+    <div class="status"></div>
+    <div class="card-row"><span class="card-icon">💬</span><div class="card-info"><div class="card-title">고객 대화 정리 시스템<span class="card-ver">v4</span></div></div></div>
+    <div class="card-desc">인물 필드 토글, URL 추출. 비정형 텍스트 자동 분류 및 고객 파이프라인 관리.</div>
+    <div class="card-tags"><span class="tag tag-crm">CRM</span><span class="tag tag-ai">자동분류</span></div>
+  </a>
+
+  <a class="card c-yellow" href="https://jyjzzjtube-pixel.github.io/sinchon-settlement/" target="_blank">
+    <div class="status"></div>
+    <div class="card-row"><span class="card-icon">🏬</span><div class="card-info"><div class="card-title">현대백화점 신촌점 정산</div></div></div>
+    <div class="card-desc">현대백화점 신촌점 정산 관리 시스템. 매출/정산/수수료 추적.</div>
+    <div class="card-tags"><span class="tag tag-biz">정산관리</span><span class="tag tag-tax">매출추적</span></div>
+  </a>
+</div>
+
+<!-- AI & 유틸리티 -->
+<div class="section-title">🤖 AI & 유틸리티</div>
+<div class="grid">
+  <a class="card c-gold" href="https://jyjzzjtube-pixel.github.io/nano-banana-editor/" target="_blank">
+    <div class="status"></div>
+    <div class="card-row"><span class="card-icon">🍌</span><div class="card-info"><div class="card-title">Nano Banana Editor<span class="card-ver">v3</span></div></div></div>
+    <div class="card-desc">Gemini API 연동 마이크로급 이미지 편집기. AI 프롬프트 기반 이미지 생성.</div>
+    <div class="card-tags"><span class="tag tag-api">Gemini API</span><span class="tag tag-ai">AI 이미지</span></div>
+  </a>
+
+  <a class="card c-lime" href="https://jyjzzjtube-pixel.github.io/lottery-master-pro/" target="_blank">
+    <div class="status"></div>
+    <div class="card-row"><span class="card-icon">🎰</span><div class="card-info"><div class="card-title">LOTTERY MASTER PRO<span class="card-ver">V2</span></div></div></div>
+    <div class="card-desc">AI 기반 로또 번호 분석 및 예측. 당첨 패턴 통계 분석.</div>
+    <div class="card-tags"><span class="tag tag-ai">AI 분석</span><span class="tag tag-stock">통계예측</span></div>
+  </a>
+
+  <a class="card c-red" href="https://jyjzzjtube-pixel.github.io/alpha-engine-v3/" target="_blank">
+    <div class="status"></div>
+    <div class="card-row"><span class="card-icon">📈</span><div class="card-info"><div class="card-title">Alpha Engine<span class="card-ver">v5.8</span></div></div></div>
+    <div class="card-desc">AI 주식 투자 도우미. 포트폴리오, 기술분석, 백테스팅, 다중 AI 교차검증.</div>
+    <div class="card-tags"><span class="tag tag-stock">주식투자</span><span class="tag tag-ai">Multi-AI</span><span class="tag tag-api">실시간분석</span></div>
   </a>
 </div>
 
@@ -138,32 +166,23 @@ function updateClock(){
 }
 updateClock();setInterval(updateClock,1000);
 
-// 사이트 상태 체크 (간단한 ping)
+// 사이트 상태 체크
 async function checkStatus(card,url){
   try{
     const ctrl=new AbortController();
     const tid=setTimeout(()=>ctrl.abort(),5000);
-    const res=await fetch(url,{method:'HEAD',mode:'no-cors',signal:ctrl.signal});
+    await fetch(url,{method:'HEAD',mode:'no-cors',signal:ctrl.signal});
     clearTimeout(tid);
     card.querySelector('.status').style.background='var(--green)';
-    card.querySelector('.status').style.boxShadow='0 0 8px var(--green)';
+    card.querySelector('.status').style.boxShadow='0 0 6px var(--green)';
   }catch(e){
     card.querySelector('.status').style.background='var(--red)';
-    card.querySelector('.status').style.boxShadow='0 0 8px var(--red)';
+    card.querySelector('.status').style.boxShadow='0 0 6px var(--red)';
   }
 }
-
-// 모든 앱 상태 체크
 document.querySelectorAll('.card').forEach(card=>{
   card.classList.add('loading');
   checkStatus(card,card.href).then(()=>card.classList.remove('loading'));
-});
-
-// PWA install prompt
-let deferredPrompt;
-window.addEventListener('beforeinstallprompt',e=>{
-  e.preventDefault();
-  deferredPrompt=e;
 });
 </script>
 </body>
