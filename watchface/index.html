@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0a0a1a">
+<title>YJ Watchface Collection</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a1a;color:#e8e8f0;min-height:100vh;padding:20px 16px}
+.header{text-align:center;margin-bottom:24px}
+.header h1{font-size:22px;font-weight:800;background:linear-gradient(135deg,#f0c040,#ff9f43);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{color:#8888aa;font-size:12px;margin-top:4px}
+.info{background:#12122a;border:1px solid #2a2a4a;border-radius:12px;padding:14px;margin-bottom:20px;font-size:12px;color:#8888aa;line-height:1.6}
+.info b{color:#00d68f}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.face{background:#12122a;border:1px solid #2a2a4a;border-radius:16px;overflow:hidden;text-align:center}
+.face img{width:100%;aspect-ratio:1;object-fit:cover;display:block;border-radius:16px 16px 0 0}
+.face-info{padding:10px 8px}
+.face-name{font-size:13px;font-weight:700;margin-bottom:6px}
+.dl-btn{display:inline-block;background:linear-gradient(135deg,#6c5ce7,#a29bfe);color:#fff;padding:6px 16px;border-radius:20px;font-size:11px;font-weight:600;text-decoration:none;border:none;cursor:pointer}
+.dl-btn:active{transform:scale(.95)}
+.aod-label{display:inline-block;background:rgba(255,255,255,.08);color:#8888aa;padding:2px 8px;border-radius:10px;font-size:10px;margin-top:6px}
+.footer{text-align:center;padding:24px 0 10px;color:#8888aa;font-size:11px}
+@media(max-width:360px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>YJ Watchface Collection</h1>
+  <p>Galaxy Watch 7 | 450x450px</p>
+</div>
+
+<div class="info">
+  <b>설치 방법:</b><br>
+  1. 아래 이미지를 길게 눌러 저장<br>
+  2. Galaxy Wearable 앱 > 워치페이스<br>
+  3. '사진' 워치페이스 선택 > 저장한 이미지 적용
+</div>
+
+<div class="grid">
+  <div class="face">
+    <img src="yj_geneve_dark.jpg" alt="Geneve Dark">
+    <div class="face-info">
+      <div class="face-name">Geneve Dark</div>
+      <a class="dl-btn" href="yj_geneve_dark.jpg" download>저장</a>
+      <br><a class="aod-label" href="yj_geneve_dark_aod.jpg" download>AOD 버전</a>
+    </div>
+  </div>
+
+  <div class="face">
+    <img src="yj_daytona_gold.jpg" alt="Daytona Gold">
+    <div class="face-info">
+      <div class="face-name">Daytona Gold</div>
+      <a class="dl-btn" href="yj_daytona_gold.jpg" download>저장</a>
+      <br><a class="aod-label" href="yj_daytona_gold_aod.jpg" download>AOD 버전</a>
+    </div>
+  </div>
+
+  <div class="face">
+    <img src="yj_geneve_classic.jpg" alt="Geneve Classic">
+    <div class="face-info">
+      <div class="face-name">Geneve Classic</div>
+      <a class="dl-btn" href="yj_geneve_classic.jpg" download>저장</a>
+      <br><a class="aod-label" href="yj_geneve_classic_aod.jpg" download>AOD 버전</a>
+    </div>
+  </div>
+
+  <div class="face">
+    <img src="yj_automatic_silver.jpg" alt="Automatic Silver">
+    <div class="face-info">
+      <div class="face-name">Automatic Silver</div>
+      <a class="dl-btn" href="yj_automatic_silver.jpg" download>저장</a>
+      <br><a class="aod-label" href="yj_automatic_silver_aod.jpg" download>AOD 버전</a>
+    </div>
+  </div>
+
+  <div class="face">
+    <img src="yj_ocean_blue.jpg" alt="Ocean Blue">
+    <div class="face-info">
+      <div class="face-name">Ocean Blue</div>
+      <a class="dl-btn" href="yj_ocean_blue.jpg" download>저장</a>
+      <br><a class="aod-label" href="yj_ocean_blue_aod.jpg" download>AOD 버전</a>
+    </div>
+  </div>
+
+  <div class="face">
+    <img src="yj_classic_white.jpg" alt="Classic White">
+    <div class="face-info">
+      <div class="face-name">Classic White</div>
+      <a class="dl-btn" href="yj_classic_white.jpg" download>저장</a>
+      <br><a class="aod-label" href="yj_classic_white_aod.jpg" download>AOD 버전</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>YJ Partners &copy; 2026</p>
+  <p style="margin-top:4px"><a href="../" style="color:#6c5ce7;text-decoration:none">< 런처로 돌아가기</a></p>
+</div>
+</body>
+</html>
