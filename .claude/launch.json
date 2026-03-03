@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "yj-launcher",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "C:/Users/jyjzz/OneDrive/바탕 화면/yj-programs/yj-launcher", "-l", "3456"],
+      "port": 3456
+    }
+  ]
+}
